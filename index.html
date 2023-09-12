@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
   <body>
     <main class="container">
-        <section class="principal">
+      <!-- <section class="principal">
             <div class="card">
                 <h1>Ejercicio 1</h1>
                 <div class="texto">
@@ -70,7 +70,80 @@
                         console.log(person);</p>
                 </div>
             </div>
-        </section>
+        </section> -->
+      <section class="principal">
+        <div class="card">
+          <h1>Ejercicio 1</h1>
+          <div class="texto">
+            <p>
+              Definicion y ejemplo de destructuracion de objetos(de 1 nivel y de
+              haasta 3 niveles)
+            </p>
+            <p>
+              const {name, age, district, address:{calle, nombre_calle,
+              referencia:{detalles}}} = person;
+            </p>
+
+            <p>
+              console.log(name); console.log(age); console.log(district);
+              console.log(calle); console.log(nombre_calle);
+              console.log(detalles);
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h1>Ejercicio 2</h1>
+          <div class="texto">
+            <p>Definicion y ejemplo de freezear un objeto</p>
+            <p>
+              Es la forma de congelar un objeto para no poder realizar
+              absolutamente nada, ni modificar, agregar o eliminar una propiedad
+            </p>
+            <p>Object.freeze(objeto);</p>
+          </div>
+        </div>
+        <div class="card">
+          <h1>Ejercicio 3</h1>
+          <div class="texto">
+            <p>Definicion y ejemplo de sellar un objeto</p>
+            <p>
+              Es la forma de bloquear un objeto para poder modificar, pero no
+              poder agregar o eliminar una propiedad
+            </p>
+            <p>Object.seal(objeto);</p>
+          </div>
+        </div>
+        <div class="card">
+          <h1>Ejercicio 4</h1>
+          <div class="texto">
+            <p>Definicion y ejemplo de unir o sumar dos objetos</p>
+            <p>
+              Se suman los objetos para poder extraer información precisa de
+              cada uno de ellos, según sea la necesidad
+            </p>
+            <p>const infoPersona = Object.assign(objeto1,objeto2);</p>
+          </div>
+        </div>
+        <div class="card">
+          <h1>Ejercicio 5</h1>
+          <div class="texto">
+            <p>Definicion y uso practico de palabra reservada this.</p>
+            <p>
+              La palabra "this" se usa para poder extraer el valor de la
+              propiedad deseada, se emplea dentro de una función
+            </p>
+            <p>
+              const persona = { name: 'Sebastian', phone: '914922934', nac:
+              'Callao', dis_nac: 'Bellavista',
+              InfoCompleta(){
+                return '$(this.name), $(this.nac),$(this.dis_nac)';
+               } 
+            };
+            console.log(persona.InfoCompleta());
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="./app.js"></script>
